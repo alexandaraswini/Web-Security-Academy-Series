@@ -11,5 +11,24 @@ Analysis:
 In order for a CSRF attack to be possible:
 - A relevant action - email change functionality
 - Cookie based session handling - session cookie
-- No unpredictable request parameters - satisfied
+- No unpredictable request parameters - satisfied (Only email parameter exist) Eg: If it contain random number or any other unpredictable parameter, its no longer
+  vulnerable. Because attacker not able to predict it.
+
+
+Solution:
+Two ways:
+1. Burp professional:
+  -Intercept the change the email address URL and send to repeater
+  -Features: Engagement Tools -> Generate CSRF PoC  (Inside of this, click on Options, and select "Include auto-submit script")
+
+2. Using script
+  -Intercept the request in Proxy and send to repeater.
+  -Write CSRF PoC
+  -Launch web server in the path which contains html script in kali machine 
+   cd <html script path>
+   python -m SimpleHttpServer 5555
+
+
+iframe concept: If you dont want the user to view the change email address in his background when they visit our website.
+
 
