@@ -8,7 +8,7 @@ Analysis:
 1. Confirm blind command injection
 - email field
 
-2. Check where images are store
+2. Check where images are store (In real test, we need to find the path, but here it shows as /var/www/images)
 
 3. Redirect output to file
 
