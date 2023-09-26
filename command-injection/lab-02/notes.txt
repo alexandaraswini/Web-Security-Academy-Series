@@ -6,3 +6,5 @@ Target Goal - Exploit blind command injection in the feedback function.
 
 Analysis:
 
+
+Add "& sleep 10 #" on each input field, then encode it with help ofCntl+U, and then check whether the 10 second delay achieved on any of input field
