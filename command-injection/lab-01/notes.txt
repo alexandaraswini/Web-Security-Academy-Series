@@ -3,4 +3,6 @@ Lab #1 - OS command injection, simple case
 Target Goal - Exploit command injection to execute whoami command.
 
 Analysis:
+Pass the value of parameter as shown below:
+'1 & ' + command
 
