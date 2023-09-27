@@ -7,7 +7,7 @@ Analysis:
 
 1. Confirm blind command injection
 - email field
-
+eg:Add "& sleep 10 #" on each input field, then encode it with help ofCntl+U, and then check whether the 10 second delay achieved on any of input field
 2. Check where images are store (In real test, we need to find the path, but here it shows as /var/www/images)
 
 3. Redirect output to file
