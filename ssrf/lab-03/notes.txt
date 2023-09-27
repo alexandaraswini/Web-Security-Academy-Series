@@ -13,6 +13,8 @@ Also, you have couple of other option to bypass this. You could use decimal enco
 
 Eg: localhost: http://2130706433/  This should work in burp
 
+The above is one way of bypassing blacklist-based input filter
+
 
 
 admin interface: http://127.1/%25%36%31dmin
